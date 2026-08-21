@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Plataforma editorial orientada pela base oficial do cliente.">
+  <title>Plataforma Core — Conteúdo confiável</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header">
+    <div class="shell nav">
+      <a class="brand" href="#inicio" aria-label="Plataforma Core, página inicial"><span>PC</span> Plataforma Core</a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+      <nav id="navigation" aria-label="Navegação principal">
+        <a href="#solucoes">Soluções</a><a href="#governanca">Governança</a><a href="#contato">Contato</a>
+        <button class="button button-small" data-open-agent type="button">Consultar base</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow">Conteúdo oficial, sempre rastreável</p>
+          <h1>Conhecimento que vira <em>resposta segura.</em></h1>
+          <p class="lead">Uma base versionada conecta páginas, equipes e agentes sem improvisar informações.</p>
+          <div class="actions"><button class="button" data-open-agent type="button">Fazer uma pergunta</button><a class="text-link" href="#solucoes">Conhecer a plataforma <span aria-hidden="true">→</span></a></div>
+          <ul class="trust" aria-label="Benefícios"><li>Fonte oficial</li><li>Histórico completo</li><li>Atendimento rastreável</li></ul>
+        </div>
+        <div class="hero-art" role="img" aria-label="Painel abstrato representando documentos conectados">
+          <div class="orb"></div><div class="doc doc-a"><span></span><span></span><span></span></div><div class="doc doc-b"><b>✓</b><span></span><span></span></div>
+          <div class="status"><i></i><div><small>Base vigente</small><strong>Conteúdo verificado</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="solucoes">
+      <div class="shell"><p class="eyebrow">Uma operação integrada</p><h2>Do documento à resposta, sem perder o contexto.</h2>
+        <div class="cards">
+          <article><span class="number">01</span><h3>Publicação estruturada</h3><p>Páginas, municípios e serviços compartilham templates consistentes e conteúdo administrável.</p></article>
+          <article><span class="number">02</span><h3>Base versionada</h3><p>Cada alteração passa por revisão humana e preserva origem, vigência e histórico.</p></article>
+          <article><span class="number">03</span><h3>Atendimento responsável</h3><p>Sem evidência suficiente, a plataforma informa a ausência e abre um chamado rastreável.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section governance" id="governanca"><div class="shell split">
+      <div><p class="eyebrow">Governança por padrão</p><h2>A informação certa, com a fonte sempre por perto.</h2><p>Permissões por função, auditoria e revisão editorial ajudam equipes a publicar com segurança.</p><button class="button ghost" data-tour type="button">Ver como funciona</button></div>
+      <ol class="steps"><li><span>1</span><div><strong>Envie uma nova versão</strong><small>O original permanece preservado.</small></div></li><li><span>2</span><div><strong>Revise as diferenças</strong><small>Inclusões e conflitos ficam visíveis.</small></div></li><li><span>3</span><div><strong>Aprove e publique</strong><small>A base vigente é reindexada.</small></div></li></ol>
+    </div></section>
+
+    <section class="cta" id="contato"><div class="shell"><div><p class="eyebrow">Comece pela fonte</p><h2>Consulte a base oficial.</h2></div><button class="button light" data-open-agent type="button">Abrir assistente</button></div></section>
+  </main>
+
+  <footer><div class="shell"><a class="brand" href="#inicio"><span>PC</span> Plataforma Core</a><p>Estrutura demonstrativa. Conteúdo institucional aguarda a Bíblia do Cliente.</p></div></footer>
+
+  <dialog id="agent" aria-labelledby="agent-title">
+    <div class="dialog-head"><div><small>Agente de conhecimento</small><h2 id="agent-title">Consulte a base oficial</h2></div><button class="close" type="button" aria-label="Fechar">×</button></div>
+    <div class="conversation" aria-live="polite"><div class="message system">Olá! Eu respondo apenas com conteúdo encontrado em documentos vigentes. Como posso ajudar?</div></div>
+    <form class="question-form"><label for="question">Sua pergunta</label><div><input id="question" name="question" required maxlength="300" autocomplete="off" placeholder="Digite sua pergunta"><button class="button" type="submit">Enviar</button></div><small>Nenhum documento oficial foi anexado ainda; dúvidas abrirão o fluxo de chamado.</small></form>
+  </dialog>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

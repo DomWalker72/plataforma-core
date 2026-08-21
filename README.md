@@ -1,5 +1,7 @@
 # Plataforma Core SaaS (Estrutura Inicial)
 
+> **Estado atual:** fundação pública demonstrativa. Os arquivos oficiais do cliente e as referências visuais ainda não estão no repositório; consulte [`docs/IMPLEMENTATION_STATUS.md`](docs/IMPLEMENTATION_STATUS.md) antes de avaliar completude ou fidelidade.
+
 Estrutura modular inicial para uma plataforma SaaS desacoplada por domínio. Cada módulo é organizado com camadas `domain`, `application`, `infrastructure` e `interfaces`, permitindo evolução independente e substituição de adaptadores sem quebrar contratos públicos.
 
 ## Módulos
@@ -22,3 +24,11 @@ Estrutura modular inicial para uma plataforma SaaS desacoplada por domínio. Cad
 - Escolher padrões de entrega (REST/GraphQL/Async) por interface.
 - Configurar pipelines de CI/CD e instrumentação base (observabilidade).
 - Adicionar testes de contrato entre módulos e contratos públicos.
+
+## Executar a fundação pública
+
+```bash
+npm run dev
+```
+
+Acesse `http://localhost:4173`. A demonstração inclui layout responsivo, navegação acessível, diálogo de consulta e o comportamento seguro para ausência de informação na base. Execute `npm test` para validar o servidor e os cabeçalhos de segurança.
