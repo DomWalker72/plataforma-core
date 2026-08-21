@@ -6,6 +6,7 @@ Estrutura modular inicial para uma plataforma SaaS desacoplada por domínio. Cad
 - `modules/identity/`: identidade e cadastro de usuários.
 - `modules/authentication/`: autenticação (Google OAuth e e-mail/senha).
 - `modules/authorization/`: controle de acesso e autorização.
+- `modules/plans/`: governança de planos (regras de acesso e limites sobre o RBAC, sem billing).
 - `modules/plans-subscriptions/`: planos, ofertas e assinaturas recorrentes.
 - `modules/billing-payments/`: faturamento, cobrança e pagamentos.
 - `modules/observability/`: logs, auditoria e métricas.
