@@ -9,6 +9,7 @@ Estrutura modular inicial para uma plataforma SaaS desacoplada por domínio. Cad
 - `modules/plans-subscriptions/`: planos, ofertas e assinaturas recorrentes.
 - `modules/billing-payments/`: faturamento, cobrança e pagamentos.
 - `modules/observability/`: logs, auditoria e métricas.
+- `modules/site-generation/`: geração de sites premium com IA, animações e publicação edge.
 
 ## Convenções de arquitetura
 - **Domain first**: regras e modelos de negócio vivem em `domain/`, livres de dependências técnicas.
@@ -22,3 +23,4 @@ Estrutura modular inicial para uma plataforma SaaS desacoplada por domínio. Cad
 - Escolher padrões de entrega (REST/GraphQL/Async) por interface.
 - Configurar pipelines de CI/CD e instrumentação base (observabilidade).
 - Adicionar testes de contrato entre módulos e contratos públicos.
+- Definir padrão de qualidade visual/técnica para o módulo de Site Generation (performance, WCAG, SEO).
